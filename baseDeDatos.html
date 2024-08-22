@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    </head>
+    
+    <style>
+      .siguiente{
+  
+  width: 180px;
+  display: block;
+  margin: auto;
+  border: none;
+  background: #0d6e00;
+  color: #e6e6e6;
+  padding: 10px 20px;
+  border-radius: 100px;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  }
+  </style>
+     
+     <body>
+
+      <!--llamar la siguiente pagina-->
+   <a href="http://127.0.0.1:5500/js/paginicio.html" target="_blank" > <button class="volver"> volver</button> </a>
+   </body>
+   
+
+    <div class="container">
+        <div class="row">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                  </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Apellidos</label>
+                  <input type="text" class="form-control" id="last">
+                </div>
+                
+                <div class="mb-3">
+                  <label for="exampleInput" class="form-label">Correo</label>
+                  <input type="text" class="form-control" id="email">
+
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInput" class="form-label">Contraseña</label>
+                  <input type="text" class="form-control" id="password">
+
+                </div><div class="mb-3">
+                  <label for="exampleInput" class="form-label">Edad</label>
+                  <input type="text" class="form-control" id="age">
+
+                </div>
+                 
+                
+
+     
+
+              
+                <a href="http://127.0.0.1:5500/testDeAprendizaje.html" class="btn btn-success"onclick = "guardar()">ENVIAR</a>  
+            </form>
+              <h1 id="print_name"></h1>
+              <h1 id="print_last"></h1>
+              <a href="#" class="btn btn-success"onclick = "ver()">VER</a>
+        </div>
+    </div>
+    <!--IMPORTAMOS A BOOSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <!--IMPORTAMOS A FIREBASE-->
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
+    <!--conectar archivos js con html osea IMPORTAR SCRIPTS-->
+    <script  src="/js/configuracion.js"></script>
+    <script src="/js/guardar.js"></script>
+    <script src="/js/ver.js"></script>
+</html>                                              
+
+
